@@ -113,7 +113,7 @@
         "post-create-project-cmd": [
             "@development-enable",
             "php bin/update-gitignore.php",
-            "php -r \"if (file_exists(\"bin/remove-package-artifacts.php\")) include \"bin/remove-package-artifacts.php\";\""
+            "php -r \"if (file_exists('bin/remove-package-artifacts.php')) include 'bin/remove-package-artifacts.php';\""
         ],
         "post-install-cmd": "@clear-config-cache",
         "post-update-cmd": "@clear-config-cache",
